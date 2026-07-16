@@ -107,7 +107,7 @@ export default function Gallery() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               src={filtered.find((img) => img.id === lightbox)?.src}
-              alt=""
+              alt={filtered.find((img) => img.id === lightbox)?.category || "Photobooth gallery image"}
               className="max-w-full max-h-[85vh] object-contain rounded-2xl"
               onClick={(e) => e.stopPropagation()}
             />

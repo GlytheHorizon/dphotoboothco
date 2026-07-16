@@ -47,7 +47,7 @@ export default function Hero() {
         >
           <img
             src={slides[current].image}
-            alt=""
+            alt="The Photobooth Co. event background"
             className="w-full h-full object-cover"
             loading="eager"
           />
