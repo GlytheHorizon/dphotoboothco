@@ -4,7 +4,7 @@ import { Phone, Mail, MessageCircle, MapPin, Send, CheckCircle, Camera } from 'l
 import Container from './Container';
 import { contactInfo } from '../data/contact';
 
-const FORMSPREE_ID = 'YOUR_FORMSPREE_ID';
+const FORM_ENDPOINT = '/send-email.php';
 
 const contactMethods = [
   {
@@ -48,7 +48,7 @@ export default function ContactCTA() {
     setSending(true);
 
     try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const res = await fetch(FORM_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
