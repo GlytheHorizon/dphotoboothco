@@ -1,0 +1,88 @@
+export const galleryCategories = ['All', 'Wedding', 'Birthday', 'Corporate', 'Debut', 'Reunion'];
+
+export const galleryImages = [
+  {
+    id: 1,
+    src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80',
+    category: 'Wedding',
+    width: 600,
+    height: 800,
+  },
+  {
+    id: 2,
+    src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80',
+    category: 'Birthday',
+    width: 600,
+    height: 600,
+  },
+  {
+    id: 3,
+    src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80',
+    category: 'Wedding',
+    width: 600,
+    height: 900,
+  },
+  {
+    id: 4,
+    src: 'https://images.unsplash.com/photo-1530023367847-a683933f4172?w=600&q=80',
+    category: 'Corporate',
+    width: 600,
+    height: 700,
+  },
+  {
+    id: 5,
+    src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80',
+    category: 'Debut',
+    width: 600,
+    height: 750,
+  },
+  {
+    id: 6,
+    src: 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80',
+    category: 'Birthday',
+    width: 600,
+    height: 650,
+  },
+  {
+    id: 7,
+    src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80',
+    category: 'Reunion',
+    width: 600,
+    height: 850,
+  },
+  {
+    id: 8,
+    src: 'https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=600&q=80',
+    category: 'Corporate',
+    width: 600,
+    height: 600,
+  },
+  {
+    id: 9,
+    src: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80',
+    category: 'Wedding',
+    width: 600,
+    height: 800,
+  },
+  {
+    id: 10,
+    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80',
+    category: 'Debut',
+    width: 600,
+    height: 700,
+  },
+  {
+    id: 11,
+    src: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80',
+    category: 'Birthday',
+    width: 600,
+    height: 900,
+  },
+  {
+    id: 12,
+    src: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&q=80',
+    category: 'Reunion',
+    width: 600,
+    height: 600,
+  },
+];

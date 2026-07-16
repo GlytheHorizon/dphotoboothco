@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Pacifico', cursive;
+
+  --color-primary: #8DC63F;
+  --color-primary-dark: #4E8F2B;
+  --color-primary-light: #B6E356;
+  --color-bg: #FFFFFF;
+  --color-bg-section: #F7FAF8;
+  --color-text: #111111;
+  --color-muted: #6B7280;
+
+  --color-primary-50: #f2fae8;
+  --color-primary-100: #e4f4d0;
+  --color-primary-200: #c9eaa1;
+  --color-primary-300: #a8dc6a;
+  --color-primary-400: #8dc63f;
+  --color-primary-500: #6a9e2e;
+  --color-primary-600: #4e8f2b;
+  --color-primary-700: #3d6f22;
+  --color-primary-800: #2d521b;
+  --color-primary-900: #1c3512;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, #8DC63F 0%, #6CBF4A 100%);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #8DC63F 0%, #B6E356 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(135deg, rgba(141, 198, 63, 0.9) 0%, rgba(78, 143, 43, 0.8) 100%);
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    background: rgba(17, 17, 17, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .shadow-card {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #8DC63F !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #8DC63F !important;
+}

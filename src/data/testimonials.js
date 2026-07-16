@@ -1,0 +1,42 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Maria Santos',
+    role: 'Wedding Client',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80',
+    rating: 5,
+    text: 'The Photobooth Co. made our wedding reception unforgettable! Our guests couldn\'t stop taking photos. The quality of the prints and the professionalism of the staff were outstanding.',
+  },
+  {
+    id: 2,
+    name: 'Juan Dela Cruz',
+    role: 'Corporate Event',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80',
+    rating: 5,
+    text: 'We hired them for our company annual party and it was a huge hit. The setup was fast, the attendants were friendly, and the digital copies made sharing easy. Highly recommended!',
+  },
+  {
+    id: 3,
+    name: 'Anna Reyes',
+    role: 'Birthday Party',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80',
+    rating: 5,
+    text: 'My daughter\'s 7th birthday was extra special because of The Photobooth Co. The kids loved the props and the Toon Me feature was a showstopper! Will definitely book again.',
+  },
+  {
+    id: 4,
+    name: 'Carlos Mendoza',
+    role: 'Debut Client',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80',
+    rating: 5,
+    text: 'Absolutely phenomenal service! The dedication strips were a beautiful touch for my daughter\'s debut. Every detail was handled with care and professionalism.',
+  },
+  {
+    id: 5,
+    name: 'Tricia Go',
+    role: 'Reunion Organizer',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&q=80',
+    rating: 5,
+    text: 'Our family reunion was made so much more fun with the photo booth. Three generations had a blast posing with props. The digital album they sent after was the cherry on top!',
+  },
+];
