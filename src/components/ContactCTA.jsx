@@ -1,10 +1,15 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MessageCircle, MapPin, Send, CheckCircle, Camera } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import Container from './Container';
 import { contactInfo } from '../data/contact';
 
-const FORM_ENDPOINT = '/send-email.php';
+const EMAILJS_CONFIG = {
+  publicKey: 'YOUR_PUBLIC_KEY',
+  serviceID: 'YOUR_SERVICE_ID',
+  templateID: 'YOUR_TEMPLATE_ID',
+};
 
 const contactMethods = [
   {
@@ -48,15 +53,18 @@ export default function ContactCTA() {
     setSending(true);
 
     try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
-      }
+      await emailjs.send(
+        EMAILJS_CONFIG.serviceID,
+        EMAILJS_CONFIG.templateID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        EMAILJS_CONFIG.publicKey
+      );
+      setSubmitted(true);
+      setFormData({ name: '', email: '', message: '' });
     } catch {
       // fallback
     } finally {
